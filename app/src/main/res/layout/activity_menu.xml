@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Ui.Menu">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/view_home"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/logo_cardapio"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_poderoso_texto" />
+
+            <TextView
+                android:id="@+id/titulo_bebidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo_cardapio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nosifer"
+                android:text="CARDÁPIO DE BEBIDAS LOUNGE"
+                android:textColor="@color/details"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mais_vendidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo_bebidas"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/biorhyme_extralight"
+                android:text="MAIS VENDIDOS"
+                android:textColor="@color/details"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Manhattan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mais_vendidos"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="Manhattan"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/preco_Manhattan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mais_vendidos"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="64dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="R$ 21,88"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Gin_Rickey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Manhattan"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="Gin Rickey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/preco_Gin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preco_Manhattan"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="64dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="R$ 18,97"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/o_Gatsby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Gin_Rickey"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="O Gatsby"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/preco_Gatsby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preco_Gin"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="64dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="R$ 24,46"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Coqueteis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preco_Gatsby"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/biorhyme_extralight"
+                android:text="COQUETÉIS"
+                android:textColor="@color/details"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/banana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Coqueteis"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="Banana com Berries"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/preco_Banana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Coqueteis"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="64dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="R$ 18,24"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Morango"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banana"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="Twist de Morango"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/preco_Morango"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preco_Banana"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="64dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="R$ 15,51"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/verao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Morango"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="Paixão de Verão"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/preco_Verao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preco_Morango"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="64dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="R$ 16,77"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Paraiso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verao"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="Paraíso"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/preco_Paraiso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preco_Verao"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="64dp"
+                android:fontFamily="@font/be_vietnam_thin_italic"
+                android:text="R$ 18,43"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/view_home"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_home_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/reservas"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_reserve"
+        app:layout_constraintBottom_toBottomOf="@id/view_home"
+        app:layout_constraintEnd_toStartOf="@id/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_home" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toBottomOf="@id/view_home"
+        app:layout_constraintEnd_toStartOf="@id/cardapio"
+        app:layout_constraintStart_toEndOf="@id/reservas"
+        app:layout_constraintTop_toTopOf="@id/view_home"
+        app:tint="@color/white" />
+
+
+    <ImageView
+        android:id="@+id/cardapio"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintBottom_toBottomOf="@id/view_home"
+        app:layout_constraintEnd_toStartOf="@id/perfil"
+        app:layout_constraintStart_toEndOf="@id/home"
+        app:layout_constraintTop_toTopOf="@id/view_home"
+        app:tint="@color/details" />
+
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintBottom_toBottomOf="@id/view_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardapio"
+        app:layout_constraintTop_toTopOf="@id/view_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

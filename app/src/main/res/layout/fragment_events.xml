@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Fragments.Events">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/imageEventos1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/philo" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/imageEventos1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_view_inf" />
+
+            <TextView
+                android:id="@+id/textEventos1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageEventos1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text=" Aqui ficará as informações do evento"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageEventos2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@+id/textEventos1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/philo1" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/imageEventos2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_view_inf" />
+
+            <TextView
+                android:id="@+id/textEventos2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageEventos2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text=" Aqui ficará as informações do evento"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Fragments.Vapes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/button" />
+
+            <ImageView
+                android:id="@+id/imagePod1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/vape1" />
+
+            <View
+                android:id="@+id/viewInfPod1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/imagePod1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_view_inf" />
+
+            <TextView
+                android:id="@+id/textPod1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagePod1"
+                android:layout_centerHorizontal="true"
+                android:text="aqui ficará a minformações do pod"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@id/viewInfPod1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@color/button" />
+
+            <ImageView
+                android:id="@+id/imagePod2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@+id/viewInfPod1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/vap2" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/imagePod2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_view_inf" />
+
+            <TextView
+                android:id="@+id/textPod2"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagePod2"
+                android:layout_centerHorizontal="true"
+                android:text="aqui ficará a minformações do pod" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
